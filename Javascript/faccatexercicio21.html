@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Thiago Destazio Avelino">
+    <meta name="description" content=" A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais 
+    de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. 
+    Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva 
+    o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas 
+    (considere que o mês possua 4 semanas exatas). ">
+    <meta name="keywords" content="Algoritmo, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faccat - Exercicio 21</title>
+</head>
+<body>
+    <script>
+        var horastrabalhadas = parseInt(prompt("Digite o número de horas trabalhadas: "));
+        var salariohora = parseInt(prompt("Digite o salário por hora: "));
+        if (horastrabalhadas > 40) {
+            var horasextra = horastrabalhadas - 40;
+            var bonus = salariohora / 2;
+            var salariototal = 4 * (bonus * horasextra) + (salariohora * horastrabalhadas);
+            alert("O valor do salário é de: " + salariototal);
+        } else if (horastrabalhadas <= 40) {
+            salariototal = 4 * (salariohora * horastrabalhadas);
+            alert("O valor do salário é de: " + salariototal)
+        }
+    </script>
+</body>
+</html>
