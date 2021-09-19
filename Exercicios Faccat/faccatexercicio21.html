@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Thiago Destazio Avelino">
+    <meta name="description" content="Algoritmo que lê a hora de inicio e fim de um jogo de xadrez">
+    <meta name="keywords" content="Algoritmo, JavaScript">
+    <title>Faccat - Exercicio 21</title>
+</head>
+<!-- Ler a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os
+minutos) e calcule a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é
+de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte. -->
+<body>
+    <script>
+        var horaInicio = prompt("Digite o horário de início da partida:");
+        var horaFim = prompt("Digite o horário de fim da partida");
+
+        if (horaFim > horaInicio) {
+            alert("A partida durou " + parseInt(horaFim - horaInicio) + " horas.");
+        } else {
+            alert("A partida durou " + parseInt(horaFim - horaInicio + 24) + " horas.");
+        }
+    </script>
+</body>
+</html>
